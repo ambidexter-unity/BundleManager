@@ -1,0 +1,19 @@
+{
+    "name": "io.ambidexter.bundlemanager",
+    "references": [
+        "GUID:495aff0cd23bc430a8e1c1a3a0c68c3e",
+        "GUID:bacbf3ab09bc2461fadd09e849b24468",
+        "GUID:bc2bbdb10f84641ee8cbf977b8a446cb",
+        "GUID:560b04d1a97f54a4e82edc0cbbb69285",
+        "GUID:f2ebf4ccc223e4fc0b475c894b3c5096"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": []
+}
