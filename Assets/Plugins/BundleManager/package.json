@@ -1,0 +1,16 @@
+{
+  "name": "io.ambidexter.bundlemanager",
+  "displayName": "Bundle manager",
+  "version": "1.0.0",
+  "unity": "2019.1",
+  "description": "Bundle manager",
+  "dependencies": {
+    "com.modesttree.zenject": "8.0.0",
+    "com.modesttree.zenject.signals": "8.0.0",
+    "com.neuecc.unirx": "6.2.2",
+    "io.ambidexter.extensions": "https://github.com/ambidexter-unity/Extensions.git#1.0.0",
+    "io.ambidexter.audiomanager": "https://github.com/ambidexter-unity/AudioManager.git#1.0.0",
+    "io.ambidexter.gametask": "https://github.com/ambidexter-unity/GameTask.git#1.0.0",
+    "io.ambidexter.gameservice": "https://github.com/ambidexter-unity/GameService.git#1.0.0"
+  }
+}
