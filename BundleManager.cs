@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using Common.Audio;
 using Common.GameTask;
@@ -187,7 +188,18 @@ namespace Common.BundleManager
 			/// <summary>
 			/// URL бандла.
 			/// </summary>
-			public string BundleUrl => $@"{Application.streamingAssetsPath}/Bundles/{BundleName}";
+			public string BundleUrl
+			{
+				get
+				{
+					var path = $@"{Application.streamingAssetsPath}/Bundles/{BundleName}";
+						
+#if UNITY_IOS
+					path = $"file://{path}";
+#endif
+					return path;
+				}
+			}
 
 			/// <summary>
 			/// Загруженный бандл.
@@ -212,6 +224,10 @@ namespace Common.BundleManager
 		public void Initialize()
 		{
 			var manifestPath = $@"{Application.streamingAssetsPath}/Bundles/manifest.json";
+						
+#if UNITY_IOS
+			manifestPath = $"file://{manifestPath}";
+#endif
 			MainThreadDispatcher.StartCoroutine(LoadManifest(manifestPath));
 		}
 
